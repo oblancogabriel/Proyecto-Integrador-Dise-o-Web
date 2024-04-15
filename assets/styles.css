@@ -6,11 +6,11 @@
     box-sizing: border-box;
 }
 
-.body{
+body{
     font-family: "Nunito Sans";
 }
 
-.header{
+header{
     height: 80px;
 }
 
@@ -28,6 +28,8 @@
 
 .logo{
     width: 80px;
+    min-width: 65x;
+    max-width: 100px;
 }
 
 ul {
@@ -49,4 +51,8 @@ ul a{
 
 #toggle-menu{
     display: none;
+}
+
+main {
+    padding-top: 50px;
 }
