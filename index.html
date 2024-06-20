@@ -17,52 +17,90 @@
             <input type="checkbox" id="toggle-menu">
             <ul class="nav">
                 <li class="nav__link"><a href="#">Inicio</a></li>
-                <li class="nav__link"><a href="#">Nosotros</a></li>
-                <li class="nav__link"><a href="#">Servicios</a></li>
-                <li class="nav__link"><a href="#">Contacto</a></li>
+                <li class="nav__link"><a href="#nos">Nosotros</a></li>
+                <li class="nav__link"><a href="#serv">Servicios</a></li>
+                <li class="nav__link"><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="portada">
-            <h1>Higiene y Seguridad en el Trabajo</h1>
-            <div>
-                <a href="#">Servicios</a>
-                <a href="#">Contacto</a>
+        <section class="hero__section">
+            <!-- <img src="/assets/img/hero/casco-de-seguridad.jpg" alt=""> -->
+            <h1 id="inicio">Higiene y Seguridad en el Trabajo</h1>
+            <div class="button-portada">
+                <a href="#serv">Servicios</a>
+                <a href="#contact">Contacto</a>
             </div>
         </section>
 
-        <section>
-            <h2>SERVICIOS</h2>
-            <article>
-                <img src="./assets/img/industry-solid.svg" alt="">
-                <h3>INDUSTRIAS</h3>
-                <p>Planificamos y programamos nuestro servicio creando herramientas que permitan a nuestros clientes cumplir con los requerimientos legales aplicables y gestionar adecuadamente los riesgos asociados en sus procesos productivos.</p>
+        <h2 id="nos">NOSOTROS</h2>
+        <section class="nosotros">
+            <article class="nos__texto">
+                <p>Somos una empresa que brinda una amplia gama de servicios relacionados con la Higiene y la Seguridad en el Trabajo. Desde nuestro nacimiento en mayo de 1993, nos preocupamos por mejorar constantemente la calidad de nuestros servicios.</p>
             </article>
-            <article>
-                <img src="/assets/img/building-solid.svg" alt="">
-                <h3>CONSTRUCCIÓN</h3>
-                <p>Asistimos a nuestros clientes a través de una estructura profesional que se consolida desde hace más de 25 años adicionando también herramientas de Gestión orientadas a profundizar el compromiso de sus integrantes con la Higiene y Seguridad.</p>
-            </article>
-            <article>
-                <img src="/assets/img/tree-solid.svg" alt="">
-                <h3>AGROGANADERÍA</h3>
-                <p>A lo largo del tiempo hemos acompañado a reconocidas empresas del rubro. Sabemos que la Agroindustria juega un papel protagónico en nuestra zona por lo que nos preparamos para atender este tipo de desafíos.</p>
-            </article>
-            <article>
-                <img src="/assets/img/list-check-solid.svg" alt="">
-                <h3>MEDICIONES</h3>
-                <p>Poseemos servicios de Monitoreo de ambiente laboral de lectura directa cumplimentando con las nuevas resoluciones de la SRT, realizamos presupuestos ajustados a la necesidad de cada cliente.</p>
-            </article>
-            <article>
-                <img src="/assets/img/graduation-cap-solid.svg" alt="">
-                <h3>CAPACITACIONES</h3>
-                <p>Brindamos capacitaciones y entrenamientos con contenidos teóricos y prácticos in Company pensados para los distintos niveles de la organización. También bridamos capacitaciones habilitantes según Res 960/15 y 3068/14.</p>
+            <article class="nos__datos">
+                <img src="./assets/img/OGB logo.svg">
+                <div class="nos__datos__txt">
+                    <p>✔ Nuestro principal objetivo es mantenernos actualizados para satisfacer las necesidades de nuestros clientes.</p>
+                    <p>✔ Contamos con personal técnico y profesional en permanente comunicación con nuestros clientes.</p>
+                    <p>✔ Cumplimos con los requerimientos técnico-legales que cada empresa necesita.</p>
+                </div>
             </article>
         </section>
 
-        <section>
-            <article>
+        <h2 id="serv">SERVICIOS</h2>
+        <section id="cardServicios">
+            <article class="cards">
+                <div class="cards__img">
+                    <img src="./assets/img/industry-solid.svg" alt="">
+                </div>
+                <div class="cards__texto">
+                    <a href="#industria">
+                        <h3>INDUSTRIAS</h3>
+                    </a>
+                    <p>Planificamos y programamos nuestro servicio creando herramientas que permitan a nuestros clientes cumplir con los requerimientos legales aplicables y gestionar adecuadamente los riesgos asociados en sus procesos productivos.</p>
+                </div>
+            </article>
+            <article class="cards">
+                <div class="cards__img">
+                    <img src="/assets/img/building-solid.svg" alt="">
+                </div>
+                <div class="cards__texto">
+                    <h3>CONSTRUCCIÓN</h3>
+                    <p>Asistimos a nuestros clientes a través de una estructura profesional que se consolida desde hace más de 25 años adicionando también herramientas de Gestión orientadas a profundizar el compromiso de sus integrantes con la Higiene y Seguridad.</p>
+                </div>
+            </article>
+            <article class="cards">
+                <div class="cards__img">
+                    <img src="/assets/img/tree-solid.svg" alt="">
+                </div>
+                <div class="cards__texto">
+                    <h3>AGROGANADERÍA</h3>
+                    <p>A lo largo del tiempo hemos acompañado a reconocidas empresas del rubro. Sabemos que la Agroindustria juega un papel protagónico en nuestra zona por lo que nos preparamos para atender este tipo de desafíos.</p>
+                </div>
+            </article>
+            <article class="cards">
+                <div class="cards__img">
+                    <img src="/assets/img/list-check-solid.svg" alt="">
+                </div>
+                <div class="cards__texto">
+                    <h3>MEDICIONES</h3>
+                    <p>Poseemos servicios de Monitoreo de ambiente laboral de lectura directa cumplimentando con las nuevas resoluciones de la SRT, realizamos presupuestos ajustados a la necesidad de cada cliente.</p>
+                </div>
+            </article>
+            <article class="cards__cp">
+                <div class="cards__img">
+                    <img src="/assets/img/graduation-cap-solid.svg" alt="">
+                </div>
+                <div class="cards__texto">
+                    <h3>CAPACITACIONES</h3>
+                    <p>Brindamos capacitaciones y entrenamientos con contenidos teóricos y prácticos in Company pensados para los distintos niveles de la organización. También bridamos capacitaciones habilitantes según Res 960/15 y 3068/14.</p>
+                </div>
+            </article>
+        </section>
+
+        <section id="masInfo">
+            <article id="industria">
                 <h2>INDUSTRIAS</h2>
                 <div>
                     <p>Implementación de Política de Seguridad</p>
@@ -85,9 +123,9 @@
                     <p>Atención de ART</p>
                     <p>Representación ante organismos públicos</p>
                 </div>
-                <a href="#">SOLICITAR PRESUPUESTO</a>
+                <a href="#contact">SOLICITAR PRESUPUESTO</a>
             </article>
-            <article>
+            <article id="construccion">
                 <h2>CONSTRUCCIÓN</h2>
                 <div>
                     <p>Confección de programas de Seguridad</p>
@@ -111,10 +149,10 @@
                     <p>Representación ante organismos públicos</p>
                 </div>
                 <div>
-                    <a href="#">SOLICITAR PRESUPUESTO</a>
+                    <a href="#contact">SOLICITAR PRESUPUESTO</a>
                 </div>
             </article>
-            <article>
+            <article id="agro">
                 <h2>AGROGANADERÍA</h2>
                 <div>
                     <p>Implementación de normas Gap</p>
@@ -137,9 +175,9 @@
                     <p>Protección de mecanismos de trasmisión</p>
                     <p>Normas de seguridad para BMP</p>
                 </div>
-                <a href="#">SOLICITAR PRESUPUESTO</a>
+                <a href="#contact">SOLICITAR PRESUPUESTO</a>
             </article>
-            <article>
+            <article id="mediciones">
                 <h2>MEDICIONES</h2>
                 <div>
                     <p>Medición de Puesta a tierra Res 900/15</p>
@@ -161,9 +199,9 @@
                     <p>Auditorías de verificación de cumplimiento legal</p>
                     <p>Auditorías de verificación de cumplimiento de normas ISO 14001 e ISO 45001</p>
                 </div>
-                <a href="#">SOLICITAR PRESUPUESTO</a>
+                <a href="#contact">SOLICITAR PRESUPUESTO</a>
             </article>
-            <article>
+            <article id="capacitaciones">
                 <h2>CAPACITACIONES</h2>
                 <div>
                     <p>Habilitación de chofer de autoelevador SRT RES 960/15</p>
@@ -187,7 +225,7 @@
                     <p>Entrenamientos para brigadistas, inicial y avanzado</p>
                     <p>Gestión 5S</p>
                 </div>
-                <a href="#">SOLICITAR PRESUPUESTO</a>
+                <a href="#contact">SOLICITAR PRESUPUESTO</a>
             </article>
         </section>
 
@@ -203,17 +241,8 @@
                 <button>Enviar CV</button>
             </form>
         </section>
-
-        <section>
-            <h2>NOSOTROS</h2>
-            <p>Somos una empresa que brinda una amplia gama de servicios relacionados con la Higiene y la Seguridad en el Trabajo. Desde nuestro nacimiento en mayo de 1993, nos preocupamos por mejorar constantemente la calidad de nuestros servicios.</p>
-            <img src="./assets/img/OGB logo.svg">
-            <p>Nuestro principal objetivo es mantenernos actualizados para satisfacer las necesidades de nuestros clientes.</p>
-            <p>Contamos con personal técnico y profesional en permanente comunicación con nuestros clientes.</p>
-            <p>Cumplimos con los requerimientos técnico-legales que cada empresa necesita.</p>
-        </section>
-
-        <h2>CONTACTO</h2>
+        
+        <h2 id="contact">CONTACTO</h2>
         <section>
             <article>
                 <h3>Dirección</h3>
